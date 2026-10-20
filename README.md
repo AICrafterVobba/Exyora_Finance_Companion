@@ -14,9 +14,9 @@ Exyora AI is an interactive prototype financial assistant designed to address cr
 4. **Audit & Safety Guardrails:** 4-tier permission logic and simulated scam risk analysis.
 
 ### Planned Production Architecture:
-* Live API integration with global SWIFT/remittance gateways.
-* Fully distributed Federated Learning pipeline and Vector Database (Milvus/Pinecone) for deep RAG memory.
-* Biometric FIDO2 / hardware-level MFA enforcement.
+- Live API integration with global SWIFT/remittance gateways.
+- Fully distributed Federated Learning pipeline and Vector Database (Milvus/Pinecone) for deep RAG memory.
+- Biometric FIDO2 / hardware-level MFA enforcement.
 
 ---
 

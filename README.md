@@ -21,9 +21,37 @@ Exyora AI is an interactive prototype financial assistant designed to address cr
 ---
 
 ## 📦 Deployment Instructions & Local Setup
-To run the Exyora AI prototype locally:
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/AICrafterVobba/Exyora_Finance_Companion.git](https://github.com/AICrafterVobba/Exyora_Finance_Companion.git)
-   cd Exyora_Finance_Companion
+**Requirements:** Python 3.10 or newer and a modern web browser. All data in this prototype is simulated.
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/AICrafterVobba/Exyora_Finance_Companion.git
+cd Exyora_Finance_Companion
+```
+
+2. **Install backend dependencies**
+```bash
+cd backend
+pip install fastapi uvicorn numpy pydantic
+```
+
+3. **Start the backend**
+```bash
+uvicorn main:app --reload --port 8000
+```
+
+4. **Open the frontend:** open the `index.html` file in the `frontend` folder in your browser. Make sure it points to the backend at `http://localhost:8000`.
+
+## ✅ Test Cases
+
+| # | Module | Input | Expected result |
+|---|---|---|---|
+| 1 | Tuition engine | Amount 5012 USD, urgency weight 1.6 | "Exyora Direct Route" is ranked optimal: fee $5, markup 0.3%, latency 2h, score 8.9 |
+| 2 | Credit builder | Home bank stability 93, utility on-time rate 91 | A portable score out of 850 is shown |
+| 3 | Scam Guard | A message asking for an urgent deposit to a personal account | Warning signs are listed and no action is taken |
+
+Sandbox operation logs are in the `sandbox_logs` folder.
+
+## 👥 Team
+Byte Voyegers, Daffodil International University. Contact: byte.voyegers.exyora@gmail.com
